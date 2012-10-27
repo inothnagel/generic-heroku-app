@@ -7,10 +7,44 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
+<div class="row">
 
+  <div class="span12">
+
+    <div class="navbar">    
+      <div class="navbar-inner">
+        <a class="brand" href="/">My Heroku App</a>
+
+        <ul class="nav">
+          <% if user_signed_in? %>
+            <li><a href="/users/edit/"><%= current_user.email %></a></li>
+            <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+          <% end %>
+        </ul>
+
+      </div>
+    </div>
+
+    <% unless flash[:notice].blank? %>
+      <div class="alert info">
+        <%= content_tag :div, flash[:notice] %>
+      </div>
+    <% end %>
+
+    <% unless flash[:error].blank? %>
+      <div class="alert error">
+        <%= content_tag :div, flash[:error] %>
+      </div>
+    <% end %>
+
+    <% unless flash[:alert].blank? %>
+      <div class="alert warning">
+        <%= content_tag :div, flash[:alert] %>
+      </div>
+    <% end %>
+
+    <%= yield %>
+  </div>
+</div> 
 </body>
 </html>
