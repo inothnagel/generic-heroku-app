@@ -1,5 +1,15 @@
 == Generic Heroku App
-A generic heroku app with user authentication, etc.
+A generic heroku app, including:
+
+  * Devise user authentication
+  * Twitter bootstrap for styling
+  * Rails Admin
+
+== TODO
+Still to add:
+
+  * SendGrid Email
+  * Heroku Scheduler File
 
 == Welcome to Rails
 
