@@ -27,6 +27,7 @@ Setup process includes:
 -   $ git init
 -   $ heroku create my_app_name
 -   $ heroku addons:add sendgrid:starter
+-   $ heroku addons:add scheduler:standard
 -   $ git push heroku master
 -   $ heroku run rake db:migrate
 
