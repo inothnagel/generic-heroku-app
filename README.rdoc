@@ -31,6 +31,10 @@ Setup process includes:
 -   $ git push heroku master
 -   $ heroku run rake db:migrate
 
+Optional:
+---------
+A daily_email task has been set up already. Remember to add 'rake daily_email' in heroku to your scheduler plugin to have it send daily.
+
 To Do
 -----
 
