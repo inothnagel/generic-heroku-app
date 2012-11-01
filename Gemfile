@@ -4,7 +4,8 @@ gem 'rails', '3.2.8'
 gem 'devise'
 gem 'fastercsv' # Only required on Ruby 1.8 and below by RailsAdmin
 gem 'rails_admin'
-gem "twitter-bootstrap-rails"
+gem 'twitter-bootstrap-rails'
+gem 'cancan'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
