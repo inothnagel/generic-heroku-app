@@ -1,9 +1,11 @@
 HerokuApp::Application.routes.draw do
+  get "home/index"
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   devise_for :users
 
-  root :to => redirect("/users/edit")
+  root :to => 'home#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

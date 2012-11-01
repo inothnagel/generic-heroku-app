@@ -160,6 +160,7 @@ DEPENDENCIES
   devise
   fastercsv
   jquery-rails
+  jquery-ui-rails
   pg
   rails (= 3.2.8)
   rails_admin
