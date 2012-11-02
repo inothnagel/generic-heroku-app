@@ -28,16 +28,16 @@ Setup process includes:
 -   $ git push heroku master
 -   $ heroku run rake db:migrate
 
-Optional:
----------
-A daily_email task has been set up already. Remember to add 'rake daily_email' in heroku to your scheduler plugin to have it send daily.
-
+How To:
+-------
+1. Send daily email:
+    - todo
+    
+2. 
 To Do
 -----
 
 There’s a lot of setup still required for a full turnkey generic heroku
 app, such as:
 
--   Add user authorization to rails\_admin via cancan.
--   Add email confirmatio to user sign up.
--   Add a blank heroku scheduler rake task.
+-   create a single rake task to setup heroku
