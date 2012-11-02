@@ -6,12 +6,20 @@ gem 'fastercsv' # Only required on Ruby 1.8 and below by RailsAdmin
 gem 'rails_admin'
 gem 'twitter-bootstrap-rails'
 gem 'cancan'
+gem 'haml'
+gem 'haml-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+end
 
 group :development, :test do
   gem 'sqlite3'
+  gem "rspec-rails", "~> 2.0"
+  gem 'capybara'
 end
 
 group :production do
