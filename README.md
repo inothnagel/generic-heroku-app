@@ -30,10 +30,10 @@ Setup process includes:
 
 How To:
 -------
-1. Send daily email:
-    - todo
+### Send daily email:
+
+### Create admin users
     
-2. 
 To Do
 -----
 
