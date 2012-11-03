@@ -18,18 +18,17 @@ The project is still in early phases, and feedback and submissions are welcome.
 Setup:
 ------
 
-Setup process includes:
+To set up a new application:
 
-- Copy the code folder
-- Delete the git repo
+- Make a copy of the code folder.
+- In the new copy, run `rake 'app:setup[app_name]'` where `app_name` is a uniqe application name that does not yet exist on Heroku.
+
+This will initiate a new git repo, Heroku application, deploy to Heroku, and open your new Heroku deployment in the browser.
+
+Details to change in the new app:
+
 - Change the database names in 'config/database.yml'
 - Change the 'from' and 'admin' email addresses in 'app/mailers/admin_mailer.rb'
-- $ git init
-- $ heroku create my_app_name
-- $ heroku addons:add sendgrid:starter
-- $ heroku addons:add scheduler:standard
-- $ git push heroku master
-- $ heroku run rake db:migrate
 
 How To:
 -------
