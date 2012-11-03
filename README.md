@@ -43,7 +43,4 @@ How To:
 To Do
 -----
 
-There’s a lot of setup still required for a full turnkey generic heroku
-app, such as:
-
--   create a single rake task to setup heroku
+Wishlist:
