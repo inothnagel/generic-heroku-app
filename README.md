@@ -30,6 +30,10 @@ Details to change in the new app:
 - Change the database names in 'config/database.yml'
 - Change the 'from' and 'admin' email addresses in 'app/mailers/admin_mailer.rb'
 
+Notes:
+------
+- The first user to register will be made an admin. All registrations thereafter will not be admins.
+
 How To:
 -------
 ### Send daily email:
