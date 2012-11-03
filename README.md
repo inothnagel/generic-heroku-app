@@ -21,7 +21,7 @@ Setup:
 To set up a new application:
 
 - Make a copy of the code folder.
-- In the new copy, run `rake 'app:setup[app_name]'` where `app_name` is a uniqe application name that does not yet exist on Heroku.
+- In the new copy, run `rake 'setup[app_name]'` where `app_name` is a uniqe application name that does not yet exist on Heroku.
 
 This will initiate a new git repo, Heroku application, deploy to Heroku, and open your new Heroku deployment in the browser.
 
