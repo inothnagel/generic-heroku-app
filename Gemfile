@@ -4,8 +4,8 @@ gem 'rails', '3.2.8'
 gem 'devise'
 gem 'fastercsv' # Only required on Ruby 1.8 and below by RailsAdmin
 gem 'rails_admin'
-gem 'twitter-bootstrap-rails'
 gem 'cancan'
+
 gem 'haml'
 gem 'haml-rails'
 
@@ -32,11 +32,8 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
+  gem "twitter-bootstrap-rails"
 end
 
 gem 'jquery-rails'
