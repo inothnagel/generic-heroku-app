@@ -26,6 +26,9 @@ namespace :app do
     puts "Deploying app to Heroku"
     `git push heroku master`
 
+    puts "Running heroku run rake db:migrate"
+    `heroku run rake db:migrate`
+
     puts "- Opening app on heroku"
     `heroku open`
     puts "Done"
