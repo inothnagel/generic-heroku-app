@@ -5,6 +5,7 @@ gem 'devise'
 gem 'fastercsv' # Only required on Ruby 1.8 and below by RailsAdmin
 gem 'rails_admin'
 gem 'cancan'
+gem 'heroku'
 
 gem 'haml'
 gem 'haml-rails'
