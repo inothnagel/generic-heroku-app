@@ -17,3 +17,8 @@
   border-right: 1px dashed lightgray;
   padding-right: 20px;
 }
+
+body {
+  background-image: url(cream_dust.png);
+  background-repeat: repeat;
+}
